@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mistorycommon:war">
+    <output-path>$PROJECT_DIR$/mistory-common/target</output-path>
+    <root id="archive" name="mistory-common.war">
+      <element id="artifact" artifact-name="mistorycommon:war exploded" />
+    </root>
+  </artifact>
+</component>

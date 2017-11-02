@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/mistory.iml" filepath="$PROJECT_DIR$/mistory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mistory-common/mistory-common.iml" filepath="$PROJECT_DIR$/mistory-common/mistory-common.iml" />
     </modules>
   </component>
 </project>
