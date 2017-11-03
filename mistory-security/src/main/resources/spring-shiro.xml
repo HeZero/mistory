@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+           http://www.springframework.org/schema/tx
+           http://www.springframework.org/schema/tx/spring-tx.xsd
+           http://www.springframework.org/schema/util
+           http://www.springframework.org/schema/util/spring-util.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <!-- rememberMe管理器 -->
+    <!--  <bean id="rememberMeManager" class="org.apache.shiro.web.mgt.CookieRememberMeManager">
+         rememberMe cookie加密的密钥 建议每个项目都不一样 默认AES算法 密钥长度（128 256 512 位）
+         <property name="cipherKey"
+                   value="#{T(org.apache.shiro.codec.Base64).decode('3AvVhmFLUs0KTA3Kprsdag==')}"/>
+         <property name="cookie" ref="rememberMeCookie"/>
+     </bean> -->
+
+    <!-- 授权 认证 -->
+    <!--<bean id="MyRealm" class="com.hsp.core.shiro.realm.MyRealm"></bean>-->
+
+    <!-- 安全管理器 -->
+    <!--<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">-->
+        <!--<property name="realm" ref="MyRealm"/>-->
+        <!--&lt;!&ndash;  <property name="rememberMeManager" ref="rememberMeManager"/> &ndash;&gt;-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash;Shiro生命周期处理器&ndash;&gt;-->
+    <!--<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>-->
+
+    <!-- Session Manager -->
+    <!-- <bean id="sessionManager" class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager">
+        相隔多久检查一次session的有效性
+         <property name="sessionValidationInterval" value="1800000"/>
+          session 有效时间为半小时 （毫秒单位）
+    <property name="globalSessionTimeout" value="1800000"/>
+       <property name="sessionDAO" ref="customShiroSessionDAO"/>
+       session 监听，可以多个。
+       <property name="sessionListeners">
+           <list>
+               <ref bean="customSessionListener"/>
+           </list>
+       </property>
+       间隔多少时间检查，不配置是60分钟
+      <property name="sessionValidationScheduler" ref="sessionValidationScheduler"/>
+      是否开启 检测，默认开启
+      <property name="sessionValidationSchedulerEnabled" value="true"/>
+       是否删除无效的，默认也是开启
+      <property name="deleteInvalidSessions" value="true"/>
+        会话Cookie模板
+       <property name="sessionIdCookie" ref="sessionIdCookie"/>
+    </bean> -->
+
+    <!-- 过滤链配置 -->
+    <!--<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">-->
+        <!--<property name="securityManager" ref="securityManager"/>-->
+        <!--<property name="loginUrl" value="/admin/login"/>-->
+        <!--<property name="successUrl" value="/admin/index"/>-->
+        <!--<property name="unauthorizedUrl" value="/"/>-->
+        <!--&lt;!&ndash; <property name="filters">-->
+
+        <!--</property>  &ndash;&gt;-->
+    <!--</bean>-->
+
+    <!-- 权限资源配置 -->
+    <!--<bean id="filterChainDefinitionsService"-->
+          <!--class="com.hsp.core.shiro.service.SimpleFilterChainDefinitionsService">-->
+        <!--<property name="definitions">-->
+            <!--<value>-->
+                <!--/asserts/** = anon-->
+                <!--&lt;!&ndash; /admin/login = anon-->
+                <!--/admin/**=authc &ndash;&gt;-->
+            <!--</value>-->
+        <!--</property>-->
+    <!--</bean>-->
+</beans>
