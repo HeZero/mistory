@@ -20,16 +20,16 @@
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
-        <javaModelGenerator targetPackage="com.hsp.mistory.entity" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.hsp.mistory.common.pojo" targetProject="./mistory-common-pojo/src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
         <!-- 配置mapper.xml文件生成 -->
-        <sqlMapGenerator targetPackage="com.hsp.mistory.mapper" targetProject="src/main/java">
+        <sqlMapGenerator targetPackage="com.hsp.mistory.common.mapper" targetProject="./mistory-common-mapper/src/main/java">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <!-- 配置Mapper.java 接口生成 -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.hsp.mistory.mapper" targetProject="src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.hsp.mistory.common.mapper" targetProject="./mistory-common-mapper/src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
@@ -39,7 +39,7 @@
         <table tableName="tb_role" domainObjectName="Role">
             <columnOverride column="*"/>
         </table>
-        <table tableName="tb_menu" domainObjectName="Menu">
+        <table tableName="tb_resource" domainObjectName="Resource">
             <columnOverride column="*"/>
         </table>
         <table tableName="tb_log" domainObjectName="Log">
