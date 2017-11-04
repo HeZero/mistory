@@ -2,8 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="403535e3-95b6-4641-85c2-3a1be917ae80" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-common-mapper/src/main/java/com/hsp/mistory/common/mapper/LogMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-common-mapper/src/main/java/com/hsp/mistory/common/mapper/LogMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-common-mapper/src/main/java/com/hsp/mistory/common/mapper/ResourceMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-common-mapper/src/main/java/com/hsp/mistory/common/mapper/ResourceMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-common-mapper/src/main/java/com/hsp/mistory/common/mapper/RoleMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-common-mapper/src/main/java/com/hsp/mistory/common/mapper/RoleMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-common-mapper/src/main/java/com/hsp/mistory/common/mapper/UserMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-common-mapper/src/main/java/com/hsp/mistory/common/mapper/UserMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-common-pojo/src/main/java/com/hsp/mistory/common/pojo/Log.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-common-pojo/src/main/java/com/hsp/mistory/common/pojo/LogExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-common-pojo/src/main/java/com/hsp/mistory/common/pojo/Resource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-common-pojo/src/main/java/com/hsp/mistory/common/pojo/ResourceExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-common-pojo/src/main/java/com/hsp/mistory/common/pojo/Role.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-common-pojo/src/main/java/com/hsp/mistory/common/pojo/RoleExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-common-pojo/src/main/java/com/hsp/mistory/common/pojo/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-common-pojo/src/main/java/com/hsp/mistory/common/pojo/UserExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-manage/src/main/webapp/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-manage/src/main/webapp/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-shop-portal/src/main/webapp/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-shop-portal/src/main/webapp/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mistory-common/mistory-common.iml" afterPath="$PROJECT_DIR$/mistory-common/mistory-common.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/mistory-common/target/" />
@@ -527,12 +546,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1509819106633</updated>
-      <workItem from="1509819117110" duration="1335000" />
+      <workItem from="1509819117110" duration="1382000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1394000" />
+    <option name="totallyTimeSpent" value="1441000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
