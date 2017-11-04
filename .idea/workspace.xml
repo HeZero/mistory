@@ -2,49 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="403535e3-95b6-4641-85c2-3a1be917ae80" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-common-mapper/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-common-pojo/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-common/src/main/java/com/hsp/exception/BaseBusisException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-manage/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-security-api/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-security-api/src/main/java/com/hsp/mistory/security/service/IRoleService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-security-api/src/main/java/com/hsp/mistory/security/service/IUserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-security/src/main/java/com/hsp/mistory/shiro/UsernamePasswordRealm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-security/src/main/resources/provider.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-service-portal/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mistory-shop-portal/pom.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/mistory_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/mistory_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/mistorycommon_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/mistorycommon_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mistory-security/src/main/java/com/hsp/mistory/entity/Log.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mistory-security/src/main/java/com/hsp/mistory/entity/LogExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mistory-security/src/main/java/com/hsp/mistory/entity/Menu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mistory-security/src/main/java/com/hsp/mistory/entity/MenuExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mistory-security/src/main/java/com/hsp/mistory/entity/Role.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mistory-security/src/main/java/com/hsp/mistory/entity/RoleExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mistory-security/src/main/java/com/hsp/mistory/entity/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mistory-security/src/main/java/com/hsp/mistory/entity/UserExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mistory-security/src/main/java/com/hsp/mistory/mapper/LogMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mistory-security/src/main/java/com/hsp/mistory/mapper/LogMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mistory-security/src/main/java/com/hsp/mistory/mapper/MenuMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mistory-security/src/main/java/com/hsp/mistory/mapper/MenuMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mistory-security/src/main/java/com/hsp/mistory/mapper/RoleMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mistory-security/src/main/java/com/hsp/mistory/mapper/RoleMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mistory-security/src/main/java/com/hsp/mistory/mapper/UserMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mistory-security/src/main/java/com/hsp/mistory/mapper/UserMapper.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mistory-common/mistory-common.iml" afterPath="$PROJECT_DIR$/mistory-common/mistory-common.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mistory-common/src/main/java/com/hsp/constant/Constant.java" afterPath="$PROJECT_DIR$/mistory-common/src/main/java/com/hsp/constant/Constant.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mistory-security/pom.xml" afterPath="$PROJECT_DIR$/mistory-security/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mistory-security/src/main/resources/spring-context.xml" afterPath="$PROJECT_DIR$/mistory-security/src/main/resources/spring-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mistory.iml" afterPath="$PROJECT_DIR$/mistory.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mistory-security/src/main/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/mistory-common/target/" />
@@ -146,6 +105,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mistory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mistory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mistory-common-pojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -158,8 +131,8 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15654206" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
@@ -554,12 +527,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1509819106633</updated>
-      <workItem from="1509819117110" duration="1097000" />
+      <workItem from="1509819117110" duration="1335000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1156000" />
+    <option name="totallyTimeSpent" value="1394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -567,7 +540,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5032189" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5032189" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -586,7 +559,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.4967811" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.49785408" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28755364" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28755364" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -995,7 +968,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>mistory</last-edited>
+          <last-edited>mistory-service-portal</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
