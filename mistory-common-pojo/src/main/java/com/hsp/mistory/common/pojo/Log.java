@@ -6,9 +6,10 @@ import lombok.Setter;
 import java.io.Serializable;
 import java.util.Date;
 
-@Setter
 @Getter
+@Setter
 public class Log implements Serializable{
+
     private Integer id;
 
     private Integer type;
@@ -18,6 +19,4 @@ public class Log implements Serializable{
     private Integer userId;
 
     private Date createTime;
-
-
 }

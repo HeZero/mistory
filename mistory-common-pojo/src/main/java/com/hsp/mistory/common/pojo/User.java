@@ -8,7 +8,7 @@ import java.util.Date;
 
 @Getter
 @Setter
-public class User implements Serializable{
+public class User implements Serializable {
 
     private Integer id;
 

@@ -8,7 +8,7 @@ import java.util.Date;
 
 @Getter
 @Setter
-public class Role implements Serializable{
+public class Role implements Serializable {
 
     private Integer id;
 
@@ -17,5 +17,4 @@ public class Role implements Serializable{
     private String isUse;
 
     private Date createTime;
-
 }
