@@ -26,16 +26,16 @@
      </bean> -->
 
     <!-- 授权 认证 -->
-    <!--<bean id="MyRealm" class="com.hsp.core.shiro.realm.MyRealm"></bean>-->
+    <bean id="BaseRealm" class="com.hsp.mistory.security.shiro.UsernamePasswordRealm"></bean>
 
     <!-- 安全管理器 -->
-    <!--<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">-->
-        <!--<property name="realm" ref="MyRealm"/>-->
-        <!--&lt;!&ndash;  <property name="rememberMeManager" ref="rememberMeManager"/> &ndash;&gt;-->
-    <!--</bean>-->
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <property name="realm" ref="BaseRealm"/>
+        <!--  <property name="rememberMeManager" ref="rememberMeManager"/> -->
+    </bean>
 
-    <!--&lt;!&ndash;Shiro生命周期处理器&ndash;&gt;-->
-    <!--<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>-->
+    <!--Shiro生命周期处理器-->
+    <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
 
     <!-- Session Manager -->
     <!-- <bean id="sessionManager" class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager">
@@ -61,15 +61,17 @@
     </bean> -->
 
     <!-- 过滤链配置 -->
-    <!--<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">-->
-        <!--<property name="securityManager" ref="securityManager"/>-->
-        <!--<property name="loginUrl" value="/admin/login"/>-->
-        <!--<property name="successUrl" value="/admin/index"/>-->
-        <!--<property name="unauthorizedUrl" value="/"/>-->
-        <!--&lt;!&ndash; <property name="filters">-->
-
-        <!--</property>  &ndash;&gt;-->
-    <!--</bean>-->
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager"/>
+        <property name="loginUrl" value="/admin/login"/>
+        <property name="successUrl" value="/admin/index"/>
+        <property name="unauthorizedUrl" value="/"/>
+        <property name="filterChainDefinitions">
+            <value>
+                /static/** = anon
+            </value>
+        </property>
+    </bean>
 
     <!-- 权限资源配置 -->
     <!--<bean id="filterChainDefinitionsService"-->

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    <!--自动扫描controller -->
+    <context:component-scan base-package="com.hsp.mistory.manage.controller"/>
+    <!--静态资源配置 -->
+    <!-- <mvc:resources mapping="/asserts/**" location="asserts/"/> -->
+
+    <!--freemarker视图解析器-->
+    <bean id="freemakerViewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.freemarker.FreeMarkerView"/>
+        <!-- 掃描路徑內所有以ftl結尾的文件 -->
+        <property name="prefix" value="/WEB-INF/templates/"/>
+        <property name="suffix" value=".ftl"/>
+        <!-- 給視圖解析器配置優先級，你可以給之前jsp視圖解析器的值配為2 -->
+        <property name="order" value="1"/>
+    </bean>
+
+    <!-- 配置jsp视图解析器 -->
+    <!-- prefix和suffix：查找视图页面的前缀和后缀（前缀[逻辑视图名]后缀）， 比如传进来的逻辑视图名为WEB-INF/jsp/hello，则该该jsp视图页面应该存放在“WEB-INF/jsp/hello.jsp”； -->
+    <bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="prefix" value="/WEB-INF/templates/"/>
+        <property name="suffix" value=".jsp"/>
+        <property name="order" value="2"/>
+    </bean>
+
+</beans>

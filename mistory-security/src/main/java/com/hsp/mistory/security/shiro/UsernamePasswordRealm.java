@@ -1,4 +1,4 @@
-package com.hsp.mistory.shiro;
+package com.hsp.mistory.security.shiro;
 
 import com.hsp.constant.Constant;
 import com.hsp.mistory.common.pojo.User;
@@ -6,6 +6,7 @@ import com.hsp.mistory.security.service.IUserService;
 import org.apache.commons.lang.StringUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
+import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
@@ -22,7 +23,12 @@ public class UsernamePasswordRealm extends AuthorizingRealm{
     IUserService userService;
 
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
-        return null;
+
+        String username = (String)principalCollection.getPrimaryPrincipal();
+        SimpleAuthorizationInfo authorizationInfo = new SimpleAuthorizationInfo();
+        authorizationInfo.setRoles( userService.findRoles(username));
+        authorizationInfo.setStringPermissions(userService.findResources(username));
+        return authorizationInfo;
     }
 
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
@@ -40,4 +46,5 @@ public class UsernamePasswordRealm extends AuthorizingRealm{
             return authenticationInfo;
         }
     }
+
 }

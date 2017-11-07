@@ -1,9 +1,8 @@
 package com.hsp.mistory.security.service;
 
-import com.hsp.mistory.common.pojo.Role;
 import com.hsp.mistory.common.pojo.User;
 
-import java.util.List;
+import java.util.Set;
 
 /**
  * Created by hsp on 2017/11/4.
@@ -20,6 +19,8 @@ public interface IUserService {
 
     int delete(Integer id);
 
-    List<Role> findRole(User user);
+    Set<String> findRoles(String username);
+
+    Set<String> findResources(String username);
 
 }
