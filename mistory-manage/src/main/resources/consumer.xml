@@ -14,9 +14,9 @@
     <dubbo:application name="manage-consumer" owner="security-provider "/>
 
     <!-- 使用zookeeper服务地址 -->
-    <dubbo:registry protocol="zookeeper" address="10.1.11.150:2181,10.1.11.151:2181,10.1.11.152:2181" check="true"/>
+    <!--<dubbo:registry protocol="zookeeper" address="10.1.11.150:2181" check="false"/>-->
 
-    <dubbo:reference id="userService" interface="com.hsp.mistory.security.service.IUserService"/>
+    <!--<dubbo:reference id="userService" interface="com.hsp.mistory.security.service.IUserService"/>-->
 
-    <dubbo:reference id="roleService" interface ="com.hsp.mistory.security.service.IRoleService"/>
+    <!--<dubbo:reference id="roleService" interface ="com.hsp.mistory.security.service.IRoleService"/>-->
 </beans>

@@ -7,6 +7,8 @@ import com.hsp.mistory.security.service.IUserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * Created by hsp on 2017/11/5.
  */
@@ -26,7 +28,8 @@ public class LoginController extends BaseController {
     }
 
     @RequestMapping(value = "login")
-    public String toLogin() {
+    public String toLogin(HttpServletRequest request) {
+        request.setAttribute("hello","hello");
         return "login";
     }
 
