@@ -8,15 +8,14 @@
 	http://code.alibabatech.com/schema/dubbo      http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <context:annotation-config/>
-    <dubbo:annotation package="com.hsp.mistory.manage.controller"/>
-
+    <dubbo:annotation package="com.hsp.mistory.manage"/>
     <!-- 消费方应用名为manage-consumer消费 服务器提供者security-provider的服务 -->
-    <dubbo:application name="manage-consumer" owner="security-provider "/>
+    <dubbo:application name="manage-consumer" owner="security-provider" organization="dubbo"/>
 
     <!-- 使用zookeeper服务地址 -->
-    <!--<dubbo:registry protocol="zookeeper" address="10.1.11.150:2181" check="false"/>-->
+    <dubbo:registry protocol="zookeeper" address="192.168.0.107:2181"/>
 
-    <!--<dubbo:reference id="userService" interface="com.hsp.mistory.security.service.IUserService"/>-->
+    <dubbo:reference id="userService" interface="com.hsp.mistory.security.service.IUserService" version="1.0"/>
 
     <!--<dubbo:reference id="roleService" interface ="com.hsp.mistory.security.service.IRoleService"/>-->
 </beans>

@@ -41,6 +41,11 @@
             <artifactId>mistory-cache</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.hsp.mistory-config</groupId>
+            <artifactId>mistory-config</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>mistory-security</finalName>

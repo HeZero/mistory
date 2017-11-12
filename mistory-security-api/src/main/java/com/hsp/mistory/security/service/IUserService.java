@@ -15,6 +15,8 @@ public interface IUserService {
 
     User select(User user);
 
+    User selectById(Integer userId);
+
     User selectByUsername(String username);
 
     int delete(Integer id);

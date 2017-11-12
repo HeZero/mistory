@@ -38,6 +38,10 @@ public class UserServiceImpl implements IUserService{
         return null;
     }
 
+    public User selectById(Integer userId) {
+        return userMapper.selectByPrimaryKey(userId);
+    }
+
     public User selectByUsername(String username) {
         return null;
     }

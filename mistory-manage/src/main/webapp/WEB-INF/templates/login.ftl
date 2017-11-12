@@ -6,5 +6,6 @@
 </head>
 <body>
     <h1>${ hello }</h1>
+    <h1>${user.username!'没有取到'}</h1>
 </body>
 </html>

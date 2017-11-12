@@ -1,12 +1,11 @@
 package com.hsp.mistory.manage.controller;
 
-import com.alibaba.dubbo.config.annotation.Reference;
-import com.hsp.mistory.security.bo.BaseController;
-import com.hsp.mistory.security.service.IRoleService;
+import com.hsp.mistory.common.pojo.User;
 import com.hsp.mistory.security.service.IUserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -14,13 +13,10 @@ import javax.servlet.http.HttpServletRequest;
  */
 @Controller
 @RequestMapping(value = "/manage/")
-public class LoginController extends BaseController {
+public class LoginController {
 
-//    @Reference()
-//    private IUserService userService;
-//
-//    @Reference
-//    private IRoleService roleService;
+    @Resource
+    private IUserService userService;
 
     @RequestMapping(value = "index")
     public String toIndex() {
@@ -29,7 +25,9 @@ public class LoginController extends BaseController {
 
     @RequestMapping(value = "login")
     public String toLogin(HttpServletRequest request) {
+        User selectUser = userService.selectById(1);
         request.setAttribute("hello","hello");
+        request.setAttribute("user", selectUser);
         return "login";
     }
 
