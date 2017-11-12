@@ -16,11 +16,11 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping(value = "/manage/")
 public class LoginController extends BaseController {
 
-    @Reference()
-    private IUserService userService;
-
-    @Reference
-    private IRoleService roleService;
+//    @Reference()
+//    private IUserService userService;
+//
+//    @Reference
+//    private IRoleService roleService;
 
     @RequestMapping(value = "index")
     public String toIndex() {

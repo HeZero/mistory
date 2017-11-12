@@ -14,7 +14,35 @@
     <!--      <import resource="classpath*:shiro/spring-shiro.xml.xml" /> -->
     <!--启动AOP支持-->
     <aop:aspectj-autoproxy/>
+
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="1000000"/>
+    </bean>
+
+    <!-- freemarker 配置 -->
+    <bean id="freemarkerConfigurer" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <!--<property name="templateLoaderPath" value="/application/admin"/>-->
+        <property name="defaultEncoding" value="UTF-8"/>
+        <property name="freemarkerSettings">
+            <props>
+                <prop key="template_update_delay">10</prop>
+                <prop key="locale">zh_CN</prop>
+                <prop key="datetime_format">yyyy-MM-dd HH:mm:ss</prop>
+                <prop key="date_format">yyyy-MM-dd</prop>
+                <prop key="time_format">HH:mm:ss</prop>
+                <prop key="number_format">#.##</prop>
+            </props>
+        </property>
+
+        <!--<property name="freemarkerVariables">-->
+            <!--<map>-->
+                <!--<entry key="WebRoot" value="/mistory-manage/"></entry>-->
+            <!--</map>-->
+        <!--</property>-->
+
+    </bean>
     <import resource="spring-mvc.xml" />
-    <import resource="consumer.xml"/>
+    <!--<import resource="consumer.xml"/>-->
 
 </beans>

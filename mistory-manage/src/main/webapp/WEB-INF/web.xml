@@ -72,7 +72,7 @@
     <!--</filter-mapping>-->
 
      <welcome-file-list>
-      <welcome-file>/index</welcome-file>
+      <welcome-file>/manage/index</welcome-file>
     </welcome-file-list>
 
     <session-config>

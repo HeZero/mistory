@@ -14,7 +14,7 @@
     <!--      <import resource="classpath*:shiro/spring-shiro.xml.xml" /> -->
     <!--启动AOP支持-->
     <aop:aspectj-autoproxy/>
-    <import resource="spring-mvc.xml" />
+    <!--<import resource="spring-mvc.xml" />-->
     <import resource="spring-mybatis.xml"/>
     <import resource="spring-shiro.xml"/>
     <import resource="provider.xml"/>

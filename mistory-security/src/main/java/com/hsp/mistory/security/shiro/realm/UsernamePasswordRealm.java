@@ -1,4 +1,4 @@
-package com.hsp.mistory.security.shiro;
+package com.hsp.mistory.security.shiro.realm;
 
 import com.hsp.constant.Constant;
 import com.hsp.mistory.common.pojo.User;

@@ -11,6 +11,13 @@
 
     <groupId>com.hsp.mistory-cache</groupId>
     <artifactId>mistory-cache</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>com.hsp.mistory-common</groupId>
+            <artifactId>mistory-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 
 </project>
