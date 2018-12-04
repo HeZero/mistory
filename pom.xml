@@ -22,7 +22,7 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <spring.version>4.1.4.RELEASE</spring.version>
+    <spring.version>4.3.17.RELEASE</spring.version>
     <project.environment>dev</project.environment>
     <shiro.version>1.4.0</shiro.version>
   </properties>
